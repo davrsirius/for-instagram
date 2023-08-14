@@ -1,0 +1,1 @@
+console.log("seven" + "7" - "7")

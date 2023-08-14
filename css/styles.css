@@ -16,11 +16,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'JetBrains Mono', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color: rgb(21, 92, 99);
+  color: aliceblue;
 }
 
 img {
@@ -70,6 +70,7 @@ select:-webkit-autofill:focus {
 .container {
   width: 100%;
   max-width: 1200px;
+  padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -81,6 +82,122 @@ select:-webkit-autofill:focus {
 .main-content {
   flex-grow: 1;
 }
+
+
+.heading {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: rgb(22, 141, 137);
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box__top {
+  display: flex;
+  gap: 6px;
+  background-color: #555;
+  padding: 8px;
+}
+
+.box__spans {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.box__top--spans-red {
+  background-color: red;
+}
+
+.box__top--spans-yellow {
+  background-color: yellow;
+}
+
+.box__top--spans-green {
+  background-color: green;
+}
+
+.box__bottom {
+  background-color: #333;
+  padding: 16px 8px;
+}
+
+.heading2 {}
+
+.answer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.answer-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.answer-list__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.answer-list__span-letter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(22, 141, 137);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.answer-list__span-letter::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  left: -5px;
+  border: 2px solid rgb(22, 141, 137);
+  border-radius: 50%;
+
+}
+
+.answer-list__span-value {
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(22, 141, 137);
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RETINA BACKGROUNDS */
